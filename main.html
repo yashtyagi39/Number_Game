@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="main center">
+        <div class="header">
+            <h1 class="h1">NEW GAME</h1>
+
+            <span id="time"><b>Time</b></span>
+            <button id="button">start</button>
+            <span id="best_time"><b>Best Time</b></span>
+
+            <p id="timing">
+                <span id="clock">0 Secs</span>
+                <span id="best_clock">0 Secs</span>
+            </p>
+
+            <p class="click">Click <strong>the numbers</strong> as quickly as you can!
+        </div>
+
+        <audio id="audio" src="click.mp3"></audio>
+
+        <div class="grid">
+            <div class="grid_element" id="0" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="1" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="2" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="3" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="4" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="5" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="6" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="7" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="8" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="9" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="10" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="11" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="12" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="13" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="14" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="15" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="16" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="17" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="18" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+            <div class="grid_element" id="19" onclick="myFunction(this.id);" style="cursor:pointer;">1</div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="gap1">Time: <span id="showTime"></span>Secs</h2>
+            <h2 id="gap2">Best Time: <span id="showbTime">10</span>Secs</h2>
+            <button id="restart" onclick="location.reload();">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
